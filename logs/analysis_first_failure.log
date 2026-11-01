@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/alexander/Desktop/sweettv_codex_start/project/src/analyze.py", line 89, in <module>
+    with threadpool_limits(limits=1): run(Path(sys.argv[1]))
+                                      ~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/alexander/Desktop/sweettv_codex_start/project/src/analyze.py", line 37, in run
+    after=np.array([independent_ap([items[i] for i in row],targets[u]) for u,row in enumerate(pred)])
+                                                           ~~~~~~~^^^
+KeyError: 0

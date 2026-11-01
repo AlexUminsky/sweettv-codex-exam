@@ -1,0 +1,20 @@
+start 2026-11-01T14:52:55.237847
+model popularity seconds 0.432
+model repeat seconds 0.472
+model content seconds 1.645
+model rules_s2_l5 seconds 0.523
+model rules_s5_l20 seconds 0.484
+model als_f16_a10 seconds 1.216
+model als_f32_a10 seconds 1.504
+model als_f32_a40 seconds 1.453
+      method  map5_template_all  map5_template_active  map5_all_active  seconds
+  popularity           0.246649              0.251033         0.231579 0.432206
+      repeat           0.355864              0.362188         0.325055 0.472224
+     content           0.205927              0.209587         0.197812 1.645062
+ rules_s2_l5           0.245388              0.249749         0.226239 0.523215
+rules_s5_l20           0.244531              0.248877         0.224737 0.484179
+ als_f16_a10           0.210495              0.214236         0.208025 1.216096
+ als_f32_a10           0.193052              0.196483         0.196014 1.504396
+ als_f32_a40           0.138360              0.140819         0.149052 1.452509
+model repeat seconds 0.51
+complete repeat wall seconds 13.62651945799007

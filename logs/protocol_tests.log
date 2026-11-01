@@ -1,0 +1,11 @@
+test_als_unobserved_items_zero (test_protocol.Protocol.test_als_unobserved_items_zero) ... ok
+test_ap_independent_arithmetic (test_protocol.Protocol.test_ap_independent_arithmetic) ... ok
+test_dates_ids_boundaries (test_protocol.Protocol.test_dates_ids_boundaries) ... ok
+test_interval_against_independent_bruteforce (test_protocol.Protocol.test_interval_against_independent_bruteforce) ... ok
+test_tie_fallback (test_protocol.Protocol.test_tie_fallback) ... ok
+test_union_and_threshold (test_protocol.Protocol.test_union_and_threshold) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.010s
+
+OK

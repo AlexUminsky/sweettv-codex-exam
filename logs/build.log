@@ -1,0 +1,26 @@
+start 2026-11-01T14:50:50.464991
+joined log rows 200000
+joined log rows 1200000
+joined log rows 2200000
+joined log rows 3200000
+joined log rows 4200000
+joined log rows 5200000
+model popularity seconds 0.426
+model repeat seconds 0.444
+model content seconds 1.615
+model rules_s2_l5 seconds 0.514
+model rules_s5_l20 seconds 0.482
+model als_f16_a10 seconds 1.241
+model als_f32_a10 seconds 1.492
+model als_f32_a40 seconds 1.501
+      method  map5_template_all  map5_template_active  map5_all_active  seconds
+  popularity           0.246649              0.251033         0.231579 0.426482
+      repeat           0.355864              0.362188         0.325055 0.443572
+     content           0.205927              0.209587         0.197812 1.614830
+ rules_s2_l5           0.245388              0.249749         0.226239 0.514467
+rules_s5_l20           0.244531              0.248877         0.224737 0.481785
+ als_f16_a10           0.215371              0.219199         0.210969 1.241022
+ als_f32_a10           0.189390              0.192756         0.194221 1.492024
+ als_f32_a40           0.132933              0.135296         0.146502 1.500570
+model repeat seconds 0.508
+complete repeat wall seconds 37.138693291999516
