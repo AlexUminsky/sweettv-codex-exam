@@ -1,0 +1,43 @@
+ File descriptions 
+ 
+  dataset11-30week.csv  - the training set. **vsetv_id** is the same as **channel_id** in export_arh_*.csv files. 
+  export_arh_10-19.csv  - supplemental information about train data (TV program schedule). Contains  tv_show_id - you have to predict 5 of these for the submission.csv user_ids. Note: tv_show_id = 0 stands for irrelevant TV shows, drop them! 
+  export_arh_20-30.csv  - supplemental information about train data (TV program schedule). Contains  tv_show_id - you have to predict 5 of these for the submission.csv user_ids. Note: tv_show_id = 0 stands for irrelevant TV shows, drop them! 
+  export_arh_31-42.csv  - supplemental information about test data (TV program schedule). Contains  tv_show_id - you have to predict 5 of these for the submission.csv user_ids. Note: tv_show_id = 0 stands for irrelevant TV shows, drop them! 
+  submission.csv  - a sample submission file in the correct format. Substitute 5 zeros with 5 predicted tv_show_ids for each user! 
+ 
+ Train data fields 
+ 
+  user_id  - an anonymous id unique to a given user 
+  vsetv_id  - the id of a channel (equal to **channel_id** in export_arch_*.csv) 
+  start_time  - start time of channel being watched 
+  end_time  - end time of channel being watched 
+  duration  - duration of channel being watched 
+ 
+ Supplemental information data fields 
+ 
+  channel_id  - Channel ID 
+  channel_title  - Channel title 
+  start_time  - Show start time 
+  duration  - Duration in seconds 
+  tv_show_title  - Title in the TV program 
+  tv_show_id  - The identifier of a TV show or movie in the TV program database. It is not related to the base of films. int stands for a TV show episode and 0 for films 
+  tv_show_category  - TV Show Category 
+  tv_show_genre_1  - TV Show Genre 1 
+  tv_show_genre_2  - TV Show Genre 2 
+  tv_show_genre_3  - TV Show Genre 3 
+  year_of_production  - The period of release or the year of production, if it ends in - means to the current moment. 
+  director  - Film director. 
+  actors  - Movie Actors or TV presenters. 
+ 
+
+ Test data contains user's tv program preferences for the next 12 weeks (weeks 31-42). Private/public test data is split BY USERS (50/50) - not by time. Every user from the solution has strictly 5 preferred TV programs, sorted ASC from the most preferred (#1) - has the largest number of views - to the least preferred (#5) - has the lowest number of views among top 5 TV programs FOR EACH USER 
+
+ How expected solution file (stuff you have to predict) was made 
+ 
+ all entries with tv_show_id = 0 were removed from TV program schedule files 
+ for each user and each TV show user screen time (time user watched the show divided by total duration of the show) was calculated. Only TV shows with high screen time (>= 0.8) were taken into account. 
+ for each user high-screen time TV shows frequency was calculated 
+ for each user **strictly** 5 most frequent TV shows were selected DESC (#1 is the most frequent, #5 is the least frequent amongst top 5) - order matters! 
+ You have to guess 5 (space-separated) tv_show_ids for each user - fill submission.csv 
+ 
