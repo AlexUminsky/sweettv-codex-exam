@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-11-01T14:56:51.359300",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:11:29) [Clang 20.1.8 ]",
+  "processor": "arm",
+  "cpu_count": 10,
+  "seed": 20261101,
+  "threads": 1,
+  "wall_seconds": 37.61788216599962,
+  "peak_rss_bytes": 1950810112,
+  "validation_boundary": "2020-05-18 00:00:00",
+  "final_boundary": "2020-07-27 00:00:00",
+  "threshold": 0.8
+}

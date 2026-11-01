@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "file": "export_arh_11-20-final.csv",
+      "rows": 1074235,
+      "zero_rows": 958622,
+      "invalid_rows": 1,
+      "min_start": 1583708400,
+      "max_start": 1589802300
+    },
+    {
+      "file": "export_arh_21-30-final.csv",
+      "rows": 1074394,
+      "zero_rows": 952889,
+      "invalid_rows": 0,
+      "min_start": 1589760000,
+      "max_start": 1595850900
+    },
+    {
+      "file": "export_arh_31-42-final.csv",
+      "rows": 1295378,
+      "zero_rows": 1150604,
+      "invalid_rows": 0,
+      "min_start": 1595808000,
+      "max_start": 1603108500
+    }
+  ],
+  "duplicate_airings_removed": 0,
+  "labelled_airings": 381892,
+  "duration_quantiles": {
+    "0.0": 60.0,
+    "0.1": 600.0,
+    "0.5": 2700.0,
+    "0.9": 7200.0,
+    "0.99": 13500.0,
+    "1.0": 32700.0
+  }
+}

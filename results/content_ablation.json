@@ -1,0 +1,57 @@
+{
+  "lambda_before": 0,
+  "lambda_after": 0.25,
+  "map5_before": 0.20592746913580243,
+  "map5_after": 0.31392305996472664,
+  "paired_users_improved": 727,
+  "paired_users_worsened": 44,
+  "candidate_nonzero_metadata_vectors": 3980,
+  "identical_vector_groups": 5,
+  "items_in_collisions": 10,
+  "largest_collision_ids": [
+    "200432",
+    "700369"
+  ],
+  "two_users": [
+    {
+      "user_id": "10500740270951698446",
+      "before": [
+        "5900275",
+        "240081",
+        "2500261",
+        "2400480",
+        "5900484"
+      ],
+      "after": [
+        "2400480",
+        "240081",
+        "12001682",
+        "2400508",
+        "200337"
+      ],
+      "ap_before": 0.05,
+      "ap_after": 0.3333333333333333
+    },
+    {
+      "user_id": "10120801182216576239",
+      "before": [
+        "2400480",
+        "240081",
+        "2400467",
+        "200344",
+        "2400508"
+      ],
+      "after": [
+        "2400480",
+        "240081",
+        "2400467",
+        "200344",
+        "2400508"
+      ],
+      "ap_before": 0.4,
+      "ap_after": 0.4
+    }
+  ],
+  "time_seconds": 6.288829208002426,
+  "interpretation": "Adding the declared item-specific repeat term tests loss of identity/frequency information; it does not isolate all metadata or population effects."
+}

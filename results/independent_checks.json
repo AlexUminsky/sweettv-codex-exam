@@ -1,0 +1,34 @@
+{
+  "popularity": {
+    "independent_map5": 0.24664947089947092,
+    "agreement": true
+  },
+  "repeat": {
+    "independent_map5": 0.35586419753086423,
+    "agreement": true
+  },
+  "content": {
+    "independent_map5": 0.20592746913580243,
+    "agreement": true
+  },
+  "rules_s2_l5": {
+    "independent_map5": 0.2453880070546737,
+    "agreement": true
+  },
+  "rules_s5_l20": {
+    "independent_map5": 0.24453130511463844,
+    "agreement": true
+  },
+  "als_f16_a10": {
+    "independent_map5": 0.21049492945326279,
+    "agreement": true
+  },
+  "als_f32_a10": {
+    "independent_map5": 0.19305224867724868,
+    "agreement": true
+  },
+  "als_f32_a40": {
+    "independent_map5": 0.13835978835978838,
+    "agreement": true
+  }
+}

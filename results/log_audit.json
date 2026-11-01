@@ -1,0 +1,21 @@
+{
+  "rows": 5821987,
+  "invalid_rows": 0,
+  "duration_mismatch_rows": 117,
+  "sessions_crossing_validation_boundary": 1007,
+  "sessions_on_channels_without_labelled_airings": 1103935,
+  "overlap_fragments": 3845514,
+  "user_airing_unions": 3012383,
+  "raw_overlap_seconds": 4573781960,
+  "union_overlap_seconds": 4495818771,
+  "first_session_start": 1583712002,
+  "last_session_end": 1595807998,
+  "session_duration_quantiles": {
+    "0": 61.0,
+    "0.1": 80.0,
+    "0.5": 396.0,
+    "0.9": 3911.0,
+    "0.99": 14080.139999999665,
+    "1": 342145.0
+  }
+}
