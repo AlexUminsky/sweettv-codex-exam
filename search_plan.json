@@ -1,0 +1,18 @@
+{
+  "declared_before_experiments": true,
+  "primary_metric": "MAP@5, all 1260 template users; no-target AP=0",
+  "validation": "2020-05-18 <= full airing < 2020-07-27; train full airings end <= 2020-05-18",
+  "threshold": "union of viewing fragments / full airing duration >= 0.8, from Kaggle Data description",
+  "repeat_policy": "allowed for every method",
+  "search": "8 configurations; components only, no fusion search; select maximum validation MAP",
+  "configs": [
+    {"name":"popularity","kind":"popularity"},
+    {"name":"repeat","kind":"repeat"},
+    {"name":"content","kind":"content"},
+    {"name":"rules_s2_l5","kind":"rules","min_support":2,"shrink":5},
+    {"name":"rules_s5_l20","kind":"rules","min_support":5,"shrink":20},
+    {"name":"als_f16_a10","kind":"als","factors":16,"alpha":10,"reg":1,"iterations":8},
+    {"name":"als_f32_a10","kind":"als","factors":32,"alpha":10,"reg":1,"iterations":8},
+    {"name":"als_f32_a40","kind":"als","factors":32,"alpha":40,"reg":1,"iterations":8}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "recorded_after_initial_components_before_diagnostic": true,
+  "failure": "Content MAP@5 0.205927 is below popularity; heavy-user list contains only news despite children's programmes dominating top held-out targets.",
+  "hypothesis": "Metadata similarities do not retain item-specific habitual counts. Add a within-user normalized repeat score to the content cosine.",
+  "one_variable": "lambda: 0 -> 0.25 in cosine + lambda * log1p(count)/max(log1p(count)). No other content change.",
+  "scope": "One validation-side confirmation, not private-score tuning; keep both outcomes and compare to repeat.",
+  "review_correction": "Zero-initialize factors of unobserved items before ALS first update, preventing availability-only IDs from influencing the first Gram matrix. Recompute affected ALS results; preserve original run."
+}

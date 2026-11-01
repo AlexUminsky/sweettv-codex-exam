@@ -1,0 +1,30 @@
+{
+  "student": "Alexander Uminsky",
+  "email": "aleksandr.uminski@gmail.com",
+  "ap5": {
+    "status": "received_and_correct",
+    "user_id": "10008352999832730058",
+    "verbatim_russian": "В списке рекомендаций два попадания, на первом и третьем местах. На первом месте precision равен 1/1 = 1. На третьем среди первых трёх рекомендаций две релевантные, поэтому precision равен 2/3. Складываем значения только для позиций с попаданиями: 1 + 2/3 = 5/3. Реальных целей пять, значит делим на min(5, 5) = 5. Получается AP@5 = (5/3) / 5 = 1/3 ≈ 0,3333",
+    "assistant_check": "Correct: actual predictions hit targets at ranks 1 and 3; independent code yields 1/3. Student response arrived after the unanswered exercise was presented.",
+    "scope": "One real AP@5 example; does not certify all metrics or personal rerun."
+  },
+  "interval": {
+    "status": "received_and_correct",
+    "user_id": "10443256005640151803",
+    "item_id": "2400508",
+    "verbatim_russian": "Фрагменты не пересекаются, поэтому их длины можно просто сложить: 662 − 0 = 662 секунды, 1107 − 1005 = 102 секунды и 1800 − 1124 = 676 секунд. Длина объединения равна 662 + 102 + 676 = 1440 секунд. Доля просмотра: 1440 / 1800 = 0,8, то есть 80%. Порог ≥0,8 достигается ровно на границе, поэтому этот показ засчитывается как просмотренный",
+    "assistant_check": "Correct: disjoint lengths 662+102+676=1440; 1440/1800=.8 qualifies at equality. Does not constitute a personal overlapping-union test."
+  },
+  "reflection": {
+    "status": "received",
+    "verbatim_russian": "Долю просмотра делим на длительность передачи потому что хотим понять какую часть именно этой передачи посмотрел пользователь. Сессия может включать несколько программ или только небольшой фрагмент одной. Деление на длительность сессии могло бы дать 100% даже если человек посмотрел всего пару минут передачи. То что repeat оьошел content и ALS на временной валидации показвает что в этом наборе данных прошлые просмотры оказались полезным сигналом для предсказания будущих. Пользователи часто возвращаются к знакомым программам. Но этот результат относится к выбранному периоду и метрике. Repeat ограничен историей пользователя: он почти не помогает находить новые программы а для пользователя без истории ему нужен fallback. Вручнкю я перепроверил два примера AP@5 по списку рекомендаций и долю просмотра по фрагментам передачи",
+    "english_translation": "Student reflection (translated from Russian): We divide viewing time by programme duration because we want to know what fraction of that particular programme the user watched. A session may include several programmes or only a small fragment of one. Dividing by session duration could give 100% even if the person watched only a couple of minutes of the programme. Repeat outperforming content and ALS on temporal validation shows that past viewing was a useful signal for predicting future viewing in this dataset. Users often return to familiar programmes, but this result concerns the selected period and metric. Repeat is limited by user history: it provides little help with discovering new programmes and needs a fallback for users without history. I manually checked two examples: AP@5 from a recommendation list and the viewing fraction from programme fragments.",
+    "assistant_check": "The normalization explanation and period/metric caveat are sound. Repeat success is consistent with habitual viewing, not a causal proof of user motives. The last sentence is interpreted using the recorded arithmetic: one AP@5 example and one viewing-fraction example, not two AP@5 examples. Explicit trusted/unverified quantities were supplied in the subsequent trust_boundary response."
+  },
+  "trust_boundary": {
+    "status": "received",
+    "verbatim_russian": "Пока я доверяю ассистенту в обработке полного датасета, обучении моделей и расчёте общей таблицы MAP@5. Я не перепроверял все соединения просмотров с расписанием и не пересчитывал метрики по всем пользователям. Также я не проверял каждую строку итогового CSV: здесь полагаюсь на автоматические проверки ассистента. Моя ручная проверка ограничена двумя разобранными примерами.",
+    "english_translation": "Student trust boundary (translated from Russian): For now, I trust the assistant's processing of the full dataset, model training and calculation of the overall MAP@5 table. I have not checked every join between viewing logs and the schedule or recomputed metrics for all users. I have also not checked every row of the final CSV; I rely on the assistant's automated checks for that. My manual verification is limited to the two worked examples.",
+    "assistant_check": "Specific and consistent with the recorded student actions: one AP@5 example and one viewing-fraction example. No full-data, all-user metric or all-row submission verification is attributed to the student."
+  }
+}

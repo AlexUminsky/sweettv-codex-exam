@@ -1,0 +1,9 @@
+# AI use and provenance
+
+An earlier attempt including a solution was made with ChatGPT Work and could not provide a verified native session export. ChatGPT Work prepared this handoff, its instructions and prompts, and recording-check utilities. Those materials were supplied to this new attempt; the student did not author them. No earlier code, predictions, report text or experiment numbers were imported.
+
+This new implementation, measurements, tests, diagnostics, report draft and public bundle were generated and executed with Codex CLI 0.166.0, selected model `gpt-6.1-sol` as recorded in native turn metadata. Codex read the exam, extracted the guidelines and midterm PDF locally, obtained public Kaggle page text, consulted primary/official sources, and generated the code and English report. The exact bound session ID is `01a196eb-7cde-7743-a95b-23446e2f52fc`. No child agents or session forks were used.
+
+The student supplied the task direction and email. He personally calculated one real AP@5 example and one real viewing-fraction example; both were checked and correct. His explanation of programme normalization and repeat's limitation is preserved verbatim in personal_checks.json, with an English translation. His explicit trust boundary is also recorded: full-dataset processing, model training, overall metrics and every-row CSV correctness were not personally verified; he relies on the assistant's automated checks. Assistant-executed tests are not personal student verification. External evidence remains pending; the report stays WORKING.
+
+The native journal covers this new Codex session only, not the earlier ChatGPT conversation. Whether an additional log is required for earlier assistance is a question for the instructor; the collector does not waive course rules or certify grading. The native JSONL must stay unmodified and private. The final byte-copy step must be run after Codex exits so the file includes the final turn.
